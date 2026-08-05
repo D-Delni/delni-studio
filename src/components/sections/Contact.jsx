@@ -23,77 +23,32 @@ export default function Contact() {
             </p>
             <p className="contact-alt">
               Prefer a conversation?{" "}
-              <a href="#" aria-label="Schedule a call with Delni Studio">
-                Schedule a Call →
+              <a
+                href="mailto:support@delni.dev"
+                aria-label="Schedule a call with Delni Studio"
+              >
+                Schedule a meeting →
               </a>
             </p>
           </div>
-
-          <form
-            className="contact-form fade-in fade-in-delay-1"
-            aria-label="Contact form"
-            noValidate
-            onSubmit={handleSubmit}
+          <div
+            class="trustpilot-widget"
+            data-locale="en-US"
+            data-template-id="56278e9abfbbba0bdcd568bc"
+            data-businessunit-id="6a708d2e5030fcd55a0164e6"
+            data-style-height="52px"
+            data-style-width="100%"
+            data-token="58e420d4-8145-4425-a555-e9ba40f9db3e"
           >
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="contact-name">Your Name</label>
-                <input
-                  type="text"
-                  id="contact-name"
-                  name="name"
-                  autoComplete="name"
-                  placeholder="Alexandra Reid"
-                  required
-                  aria-required="true"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="contact-email">Email Address</label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  name="email"
-                  autoComplete="email"
-                  placeholder="alex@company.com"
-                  required
-                  aria-required="true"
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="contact-company">Company or Practice</label>
-              <input
-                type="text"
-                id="contact-company"
-                name="company"
-                autoComplete="organization"
-                placeholder="Reid & Associates"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="contact-message">What do you need?</label>
-              <textarea
-                id="contact-message"
-                name="message"
-                placeholder="Tell us about your business, what you'd like your site to do, and any timeline you have in mind…"
-                required
-                aria-required="true"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary btn-large"
-              style={{
-                alignSelf: "flex-start",
-                opacity: sent ? 0.7 : 1,
-                cursor: sent ? "default" : "pointer",
-              }}
-              disabled={sent}
+            <a
+              href="https://www.trustpilot.com/review/delni.dev"
+              className="btn btn-primary btn-large flex"
+              target="_blank"
+              rel="noopener"
             >
-              {sent ? "Message sent ✓" : "Send Message"}
-            </button>
-          </form>
+              Review me here!
+            </a>
+          </div>
         </div>
       </div>
     </section>
